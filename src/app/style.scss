@@ -1,1 +1,4 @@
-.testA { color: red; }
+@import './shared/foundation.scss';
+@import './shared/layout.scss';
+@import './shared/object.scss';
+@import './shared/utility.scss';
