@@ -1,5 +1,5 @@
 import * as test from './test';
 console.log('bbb');
-test.exec();
+test.localize();
 
 import './style.scss';
