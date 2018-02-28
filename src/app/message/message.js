@@ -1,5 +1,5 @@
 module.exports = {
   exec: () => {
-    console.log('contact');
+    console.log('message');
   }
 };
