@@ -12,48 +12,31 @@
 
 $active-color: #bf545e;
 
-// .nav-item > a[class*="active"] {
-//     .active {
-//         position: relative;
-//         padding-bottom: 3px;
-//         border-bottom: inset 3px $active-color;
-//     }
-// }
-
 .nav-item {
   a {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 5em;
     text-decoration: none;
     color:black;
-    transition: 0.3s;
+    transition: all 0.5s;
   }
-  a:hover {
-    position: relative;
-    bottom: 1px;
-    border-bottom: inset 3px lighten($active-color, 20%);
-    animation: roll 3s infinite;
-    transform: rotate(30deg);
+
+  a::after {
+    position: absolute;
+    top:  0.5em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: lighten($active-color, 20%);
+    opacity: 0;
+    transition: 0.5s;
   }
-  a:active {
-    animation: roll 3s infinite;
-    transform: rotate(30deg);
+
+  a:hover::after {
+    top:  1.5em;
+    opacity: 1;
   }
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-  // a::after {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 50%;
-  //   content: '';
-  //   width: 0;
-  //   height: 1px;
-  //   background-color: #08a;
-  //   transition: 0.3s;
-  //   transform: translateX(-50%);
-  // }
 }
