@@ -1,5 +1,6 @@
 import * as icon from './shared/icon';
 
+import * as home from './home/home';
 import * as about from './about/about';
 import * as works from './works/works';
 import * as message from './message/message';
@@ -16,6 +17,8 @@ window.onload = () => {
     works.exec();
   } else if (url.match(/message.html/)) {
     message.exec();
+  } else {
+    home.exec();
   }
   icon.exec();
 }
