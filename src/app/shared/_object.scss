@@ -6,14 +6,12 @@
 }
 
 .nav-item {
-  display: inline;
   a {
     position: relative;
-    display: inline-block;
+    display: block;
     text-align: center;
-    width: 5em;
     text-decoration: none;
-    color:black;
+    color: #000;
     transition: all 0.5s;
   }
   a::after {

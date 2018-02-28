@@ -1,18 +1,50 @@
 .l-header {
   display: flex;
+  height: 100px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
+// .l-navbar {
+//   display: flex;
+//   height: 100px;
+//   justify-content: center;
+//   align-items: center;
+//   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+// }
+
 .l-navbar {
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    height: 100%;
+    width: $navbar-width;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: skyblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+.l-navbar a {
+    display: flex;
+    justify-content: center;
+}
+.l-navbar li {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0 2.5em 0;
+    text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+  .l-navbar {padding-top: 15px;}
+  .l-navbar a {font-size: 18px;}
 }
 
 .l-content {
   display: flex;
+  height: 100%;
   padding: 50px;
+  margin-left: $navbar-width;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
