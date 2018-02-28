@@ -28,7 +28,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: './src/*.html', to: './[name].[ext]' },
+      { from: './src/**/*.html', to: './[name].[ext]' },
     ])
   ]
 };  
