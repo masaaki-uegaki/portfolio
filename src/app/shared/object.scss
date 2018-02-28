@@ -31,6 +31,7 @@ $hover-height: -0.1em;
 
   a:hover {
     transform: translateY($hover-height);
+    color: $active-color;
   }
   a:hover::after {
     top:  1.5em;
