@@ -1,24 +1,18 @@
 .l-header {
   display: flex;
-    // height: 0px;
-    // background: red;
 }
 
 .l-navbar {
   display: flex;
   height: auto;
-  // background: blue;
   justify-content: center;
-  ul li {
-    display: inline;
-  }
+  align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .l-content {
   display: flex;
   padding: 10px;
-  // background: yellow;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
@@ -26,5 +20,4 @@
   display: flex;
   height: 50px;
   justify-content: center;
-  // background: purple;
 }
