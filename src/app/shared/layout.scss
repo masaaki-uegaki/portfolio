@@ -4,7 +4,7 @@
     // background: red;
 }
 
-.l-menu {
+.l-navbar {
   display: flex;
   height: auto;
   // background: blue;
@@ -12,12 +12,14 @@
   ul li {
     display: inline;
   }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .l-content {
   display: flex;
   padding: 10px;
   // background: yellow;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
 
 .l-footer {
