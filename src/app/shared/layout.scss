@@ -1,36 +1,28 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
-html {
-    height: 100%;
-}
-body {
-    font-family: 'Lato', sans-serif;
-    height: 100%;
-}
-
 .l-header {
-    display: flex;
+  display: flex;
     // height: 0px;
     // background: red;
 }
 
 .l-menu {
-    display: flex;
-    height: auto;
-    // background: blue;
-    ul li {
-      display: inline;
-    }
+  display: flex;
+  height: auto;
+  // background: blue;
+  justify-content: center;
+  ul li {
+    display: inline;
+  }
 }
 
 .l-content {
-    display: flex;
-    padding: 10px;
-    // background: yellow;
+  display: flex;
+  padding: 10px;
+  // background: yellow;
 }
 
 .l-footer {
-    display: flex;
-    height: 50px;
-    // background: purple;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  // background: purple;
 }
