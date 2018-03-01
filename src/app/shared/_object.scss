@@ -13,6 +13,7 @@
     text-decoration: none;
     color: #000;
     transition: all 0.5s;
+    color:#E5E5E5;
   }
   a::after {
     position: absolute;
@@ -33,4 +34,8 @@
     top:  1.5em;
     opacity: 1;
   }
+}
+
+.copyright {
+  color: #E5E5E5;
 }

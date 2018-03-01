@@ -1,7 +1,9 @@
 .l-header {
   display: flex;
-  height: 100px;
+  height: 70px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  background: #24292e;
+  color: #E5E5E5;
 }
 
 // .l-navbar {
@@ -13,26 +15,27 @@
 // }
 
 .l-navbar {
-    height: 100%;
-    width: $navbar-width;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: skyblue;
-    overflow-x: hidden;
-    padding-top: 20px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  height: 100%;
+  width: $navbar-width;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  background: #24292e;
+  color: #E5E5E5;
 }
 .l-navbar a {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .l-navbar li {
-    display: flex;
-    justify-content: center;
-    margin: 2.5em 0 2.5em 0;
-    text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 2.5em 0 2.5em 0;
+  text-decoration: none;
 }
 
 @media screen and (max-height: 450px) {
@@ -46,11 +49,14 @@
   padding: 50px;
   margin-left: $navbar-width;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  background: radial-gradient(#42afc6, #000046);
+  color: #E5E5E5;
 }
-
 .l-footer {
   display: flex;
   height: 100px;
   justify-content: center;
   align-items: center;
+  background: #24292e;
+  color: #E5E5E5;
 }
