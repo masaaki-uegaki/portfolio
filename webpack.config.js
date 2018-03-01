@@ -1,7 +1,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  mode: 'development', // development or production
+  mode: 'production', // development or production
   entry: `./src/app/index.js`,
   output: {
     path: `${__dirname}/dist`,

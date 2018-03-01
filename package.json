@@ -30,6 +30,10 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^4.4.2",
-    "normalize.css": "^8.0.0"
+    "fontawesome": "^4.7.2",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
+    "parallax-js": "^3.1.0",
+    "scrollmagic": "^2.0.5"
   }
 }

@@ -1,3 +1,6 @@
+import * as $ from 'jquery'
+import Parallax from 'parallax-js'
+
 import * as icon from './shared/icon';
 
 import * as home from './home/home';
@@ -9,7 +12,7 @@ import './style.scss';
 
 console.log('indexed');
 
-window.onload = () => {
+$(window).on('load', () => {
   let url = window.location.href;
   if (url.match(/about.html/)) {
     about.exec();
@@ -21,4 +24,4 @@ window.onload = () => {
     home.exec();
   }
   icon.exec();
-}
+});
