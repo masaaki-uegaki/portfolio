@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "copy-webpack-plugin": "^4.4.2",
+    "fontawesome": "^4.7.2",
     "normalize.css": "^8.0.0"
   }
 }
