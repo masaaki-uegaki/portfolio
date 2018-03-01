@@ -48,9 +48,34 @@ body {
   padding: 50px;
   margin-left: $navbar-width;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-  background: radial-gradient(#42afc6, #000046);
-  color: #E5E5E5;
+  background: radial-gradient($color-crystal, $color-darkness);
+  color: $color-basic-font;
+  animation-name: anime-l-content;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
+@mixin gradient-l-content($lighten) {
+    background: radial-gradient(lighten($color-crystal, $lighten), $color-darkness);
+}
+@keyframes anime-l-content {
+  0% { @include gradient-l-content(0%); }
+  10% { @include gradient-l-content(1%); }
+  20% { @include gradient-l-content(1%); }
+  30% { @include gradient-l-content(2%); }
+  40% { @include gradient-l-content(3%); }
+  50% { @include gradient-l-content(5%); }
+  60% { @include gradient-l-content(8%); }
+  70% { @include gradient-l-content(13%); }
+  80% { @include gradient-l-content(21%); }
+  90% { @include gradient-l-content(34%); }
+  100% { @include gradient-l-content(55%); }
+}
+
 .l-footer {
   display: flex;
   height: 100px;

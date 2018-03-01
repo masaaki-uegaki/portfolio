@@ -55,7 +55,7 @@
   color: #e5e5e5;
   font-size: 5em;
   font-family: 'Playfair Display';
-  animation-name: rotation;
+  animation-name: anime-catchcopy;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-delay: 0s;
@@ -65,7 +65,7 @@
   animation-play-state: running;
 }
 
-@keyframes rotation {
+@keyframes anime-catchcopy {
   0% {
     transform: scale(0.3) translateY(-5%) translateX(-5%);
   }
