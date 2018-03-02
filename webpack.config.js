@@ -35,6 +35,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: './src/**/*.html', to: './[name].[ext]' },
+      { from: './src/**/*.appcache', to: './[name].[ext]' },
       { from: './src/assets', to: 'assets/' },
     ]),
     new webpack.ProvidePlugin({
