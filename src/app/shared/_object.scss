@@ -125,6 +125,19 @@
   }
 }
 
+.sns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 15%;
+}
+
+.instagram-icon {
+  width: 60px;
+  height: 60px;
+}
+
 .btn-ball {
   border-radius: 50px;
   height: 80px;
