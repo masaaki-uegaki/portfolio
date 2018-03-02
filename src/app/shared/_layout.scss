@@ -12,7 +12,7 @@ body {
 
 .l-header {
   display: flex;
-  height: 70px;
+  height: $header-height;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
   background: #24292e;
   color: #E5E5E5;
@@ -44,7 +44,8 @@ body {
 
 .l-content {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  height: calc(100% - (#{$header-height} + #{$footer-height} + 100px));
   padding: 50px;
   margin-left: $navbar-width;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
@@ -78,7 +79,7 @@ body {
 
 .l-footer {
   display: flex;
-  height: 100px;
+  height: $footer-height;
   justify-content: center;
   align-items: center;
   background: #24292e;
