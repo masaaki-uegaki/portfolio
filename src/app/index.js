@@ -1,5 +1,4 @@
 import * as $ from 'jquery'
-import Parallax from 'parallax-js'
 
 import * as icon from './shared/icon';
 
