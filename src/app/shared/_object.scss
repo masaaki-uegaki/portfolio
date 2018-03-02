@@ -95,11 +95,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 5%;
+  top: 2em;
+  height: 18em;
 
   .submit {
     position: relative;
-    top: 3em;
+    top: 2em;
   }
 
   form div + div {
@@ -130,7 +131,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 15%;
+  top: 3em;
+  height: 3em;
 }
 
 .instagram-icon {
