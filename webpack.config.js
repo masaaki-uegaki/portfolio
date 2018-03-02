@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'production', // development or production
@@ -23,6 +24,11 @@ module.exports = {
           },
           'sass-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
   },
@@ -30,6 +36,10 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/**/*.html', to: './[name].[ext]' },
       { from: './src/assets', to: 'assets/' },
-    ])
+    ]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ]
 };
